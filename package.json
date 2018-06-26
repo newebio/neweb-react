@@ -1,23 +1,39 @@
 {
-  "name": "neweb-react",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "tsc && tslint --project tsconfig.json && jest --verbose --coverage",
-    "watch:test": "jest --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/newebio/neweb-react.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/newebio/neweb-react/issues"
-  },
-  "homepage": "https://github.com/newebio/neweb-react#readme",
-  "jest": {},
-  "devDependencies": {}
+    "name": "neweb-react",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "tsc && tslint --project tsconfig.json && jest --verbose --coverage",
+        "watch:test": "jest --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/newebio/neweb-react.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/newebio/neweb-react/issues"
+    },
+    "homepage": "https://github.com/newebio/neweb-react#readme",
+    "jest": {},
+    "devDependencies": {
+        "@types/jest": "^23.1.2",
+        "@types/react": "^16.4.2",
+        "@types/react-test-renderer": "^16.0.1",
+        "jest": "^23.2.0",
+        "neweb-core": "^0.17.5",
+        "react": "^16.4.1",
+        "react-test-renderer": "^16.4.1",
+        "rxjs": "^6.2.1",
+        "sleep-es6": "^0.0.2"
+    },
+    "peerDependencies": {
+        "@types/react": "^16.4.2",
+        "neweb-core": "^0.17.5",
+        "react": "^16.4.1"
+    },
+    "dependencies": {}
 }

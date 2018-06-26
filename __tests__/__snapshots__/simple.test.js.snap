@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`simple simple 1`] = `
+<div>
+  Hello, 
+  NewebReact
+  !
+</div>
+`;
+
+exports[`simple simple 2`] = `
+<div>
+  Hello, 
+  NewName
+  !
+</div>
+`;

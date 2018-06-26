@@ -5,6 +5,7 @@
         "no-implicit-dependencies": false,
         "no-submodule-imports": false,
         "semicolon": [true, "always", "ignore-bound-class-methods"],
-        "ordered-imports": false
+        "ordered-imports": false,
+        "member-access": false
     }
 }
