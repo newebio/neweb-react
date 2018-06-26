@@ -13,8 +13,7 @@ describe("simple", () => {
         const renderer = new ClientPageRenderer({
             RendererComponentsFactory: {
                 create: (frameName: string, props) => {
-                    return frameBy(
-                        require(__dirname + "/../__fixtures__/frames/" + frameName + "/view").default,
+                    return frameBy(require(__dirname + "/../__fixtures__/frames/" + frameName + "/view").default)(
                         props,
                     );
                 },

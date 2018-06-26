@@ -22,7 +22,7 @@ describe("simple", () => {
         const renderer = new neweb_core_1.ClientPageRenderer({
             RendererComponentsFactory: {
                 create: (frameName, props) => {
-                    return frameBy_1.frameBy(require(__dirname + "/../__fixtures__/frames/" + frameName + "/view").default, props);
+                    return frameBy_1.frameBy(require(__dirname + "/../__fixtures__/frames/" + frameName + "/view").default)(props);
                 },
             },
             renderRootComponent: (component) => {
