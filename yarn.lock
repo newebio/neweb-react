@@ -104,7 +104,7 @@
   version "23.1.2"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.1.2.tgz#a6cd37deb9110a8c63dc1435d6ee2518b3bd8e54"
 
-"@types/node@^10.3.5":
+"@types/node@*", "@types/node@^10.3.5":
   version "10.3.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.6.tgz#ea8aab9439b59f40d19ec5f13b44642344872b11"
 
@@ -123,6 +123,12 @@
 "@types/uid-safe@^2.1.1":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@types/uid-safe/-/uid-safe-2.1.1.tgz#0a7a0ac301025b1760cf0944b8895ff766049d5e"
+
+"@types/uuid@^3.4.3":
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-3.4.3.tgz#121ace265f5569ce40f4f6d0ff78a338c732a754"
+  dependencies:
+    "@types/node" "*"
 
 abab@^1.0.4:
   version "1.0.4"
@@ -2099,16 +2105,20 @@ needle@^2.2.0:
     iconv-lite "^0.4.4"
     sax "^1.2.4"
 
-neweb-core@^0.17.5:
-  version "0.17.5"
-  resolved "https://registry.yarnpkg.com/neweb-core/-/neweb-core-0.17.5.tgz#6ac26fbf30315443dddd1042b83a50b2271a4da2"
+neweb-core@^0.17.7:
+  version "0.17.7"
+  resolved "https://registry.yarnpkg.com/neweb-core/-/neweb-core-0.17.7.tgz#c0ca186f094b13a9e588a03738d135e1fd91ca31"
   dependencies:
     "@types/debug" "^0.0.30"
     "@types/node" "^10.3.5"
     "@types/uid-safe" "^2.1.1"
+    "@types/uuid" "^3.4.3"
     debug "^3.1.0"
+    querystring "^0.2.0"
     rxjs "^6.2.1"
     uid-safe "^2.1.5"
+    url "^0.11.0"
+    uuid "^3.3.0"
 
 node-fetch@^1.0.1:
   version "1.7.3"
@@ -2413,6 +2423,10 @@ psl@^1.1.24:
   version "1.1.28"
   resolved "https://registry.yarnpkg.com/psl/-/psl-1.1.28.tgz#4fb6ceb08a1e2214d4fd4de0ca22dae13740bc7b"
 
+punycode@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.3.2.tgz#9653a036fb7c1ee42342f2325cceefea3926c48d"
+
 punycode@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
@@ -2424,6 +2438,10 @@ punycode@^2.1.0:
 qs@~6.5.1:
   version "6.5.2"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
+
+querystring@0.2.0, querystring@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/querystring/-/querystring-0.2.0.tgz#b209849203bb25df820da756e747005878521620"
 
 random-bytes@~1.0.0:
   version "1.0.0"
@@ -3053,6 +3071,13 @@ urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
 
+url@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/url/-/url-0.11.0.tgz#3838e97cfc60521eb73c525a8e55bfdd9e2e28f1"
+  dependencies:
+    punycode "1.3.2"
+    querystring "0.2.0"
+
 use@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/use/-/use-3.1.0.tgz#14716bf03fdfefd03040aef58d8b4b85f3a7c544"
@@ -3070,7 +3095,7 @@ util.promisify@^1.0.0:
     define-properties "^1.1.2"
     object.getownpropertydescriptors "^2.0.3"
 
-uuid@^3.1.0:
+uuid@^3.1.0, uuid@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.0.tgz#b237147804881d7b86f40a7ff8f590f15c37de32"
 

@@ -24,7 +24,7 @@
         "@types/react": "^16.4.2",
         "@types/react-test-renderer": "^16.0.1",
         "jest": "^23.2.0",
-        "neweb-core": "^0.17.5",
+        "neweb-core": "^0.17.7",
         "react": "^16.4.1",
         "react-test-renderer": "^16.4.1",
         "rxjs": "^6.2.1",
