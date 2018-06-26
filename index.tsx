@@ -8,3 +8,6 @@ export interface IFrameViewProps<PARAMS, DATA, INPUT, OUTPUT> {
     children: { [index: string]: FrameComponent };
     seance: IViewProps<PARAMS, DATA, INPUT, OUTPUT>["seance"];
 }
+export { FrameComponent } from "./FrameComponent";
+export { frameBy } from "./frameBy";
+export { Renderer } from "./Renderer";
