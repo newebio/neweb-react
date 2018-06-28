@@ -11,3 +11,9 @@ export interface IFrameViewProps<PARAMS, DATA, INPUT, OUTPUT> {
 export { FrameComponent } from "./FrameComponent";
 export { frameBy } from "./frameBy";
 export { Renderer } from "./Renderer";
+export interface IHistory {
+    push: (url: string) => void | Promise<void>;
+    replace: (url: string) => void | Promise<void>;
+}
+export * from "./lib/HistoryContext";
+export * from "./lib/withHistory";
