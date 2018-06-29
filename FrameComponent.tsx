@@ -3,15 +3,17 @@ import { IViewProps } from "neweb-core";
 import { Subscription } from "rxjs";
 import { IFrameViewProps } from ".";
 type AnyViewProps = IViewProps<any, any, any, any>;
+interface IState {
+    params: any;
+    children: { [index: string]: any };
+}
 export class FrameComponent extends React.Component<
     AnyViewProps & {
         ComponentClass: React.ComponentClass<IFrameViewProps<any, any, any, any>>;
     },
-    {
-        params: any;
-        children: { [index: string]: any };
-    }
+    IState
 > {
+    state: IState;
     subscriptions: Subscription[] = [];
     componentWillMount() {
         this.subscriptions.push(this.props.params.subscribe((params) => this.setState({ params })));
